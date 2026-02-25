@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 30 15% 98%;
+    --foreground: 0 0% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 10% 94%;
+    --secondary-foreground: 0 0% 20%;
+
+    --muted: 30 8% 93%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 30 10% 94%;
+    --accent-foreground: 0 0% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 10% 88%;
+    --input: 30 10% 88%;
+    --ring: 0 72% 51%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 25%;
+    --sidebar-primary: 0 72% 51%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 10% 96%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 30 10% 90%;
+    --sidebar-ring: 0 72% 51%;
+
+    --canvas: 30 12% 96%;
+    --canvas-drop: 0 72% 96%;
+    --panel: 0 0% 100%;
+    --field-hover: 30 10% 97%;
+    --field-selected: 0 72% 97%;
+    --field-selected-border: 0 72% 51%;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 30 10% 92%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 30 10% 92%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 30 10% 92%;
+
+    --primary: 0 72% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 30 10% 90%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 30 10% 90%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 72% 55%;
+
+    --canvas: 0 0% 9%;
+    --canvas-drop: 0 72% 12%;
+    --panel: 0 0% 10%;
+    --field-hover: 0 0% 12%;
+    --field-selected: 0 72% 12%;
+    --field-selected-border: 0 72% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .drag-over {
+    @apply bg-canvas-drop border-dashed border-2 border-primary/30;
+  }
+
+  .field-card {
+    @apply bg-card border border-border rounded-lg p-3 cursor-pointer transition-colors duration-150;
+  }
+
+  .field-card:hover {
+    @apply bg-field-hover;
+  }
+
+  .field-card.selected {
+    @apply bg-field-selected border-field-selected-border;
+  }
+
+  .panel-section {
+    @apply p-4 border-b border-border;
+  }
+
+  .panel-heading {
+    @apply text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3;
+  }
+}
