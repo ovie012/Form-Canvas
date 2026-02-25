@@ -1,8 +1,3 @@
-<div align="center">
-  <img width="400" height="400" alt="form canvas logo" src="/formCanvasLogo.png" />
-</div>
-
-
 # FormCanvas
 
 FormCanvas is a production-grade Enterprise Form Engine Builder designed for building dynamic, schema-driven forms with conditional logic and runtime validation.
@@ -16,7 +11,7 @@ The project is built to demonstrate strong frontend architecture, scalable state
 ## Live Demo
 
 Live Link:  
-
+https://form-canvas-virid.vercel.app/
 
 ---
 
