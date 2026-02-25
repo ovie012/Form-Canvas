@@ -1,4 +1,9 @@
+
 # FormCanvas
+
+<div align="center">
+  <img width="250" height="250" alt="Logo for Form Canvas" src="./public/formCanvasLogo.png" />
+</div>
 
 FormCanvas is a production-grade Enterprise Form Engine Builder designed for building dynamic, schema-driven forms with conditional logic and runtime validation.
 
