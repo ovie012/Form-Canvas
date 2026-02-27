@@ -18,6 +18,8 @@ The project is built to demonstrate strong frontend architecture, scalable state
 Live Link:  
 https://form-canvas-virid.vercel.app/
 
+![Design preview for form canvas ](./public/form-canvas-desktop.webp)
+
 ---
 
 ## Overview
